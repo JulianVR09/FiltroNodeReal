@@ -1,3 +1,3 @@
-export interface Cart {
+export interface CartType {
     id: number;
 }

@@ -13,10 +13,9 @@ import RoleModel from "./roleModel";
 
 
 @Table({
-    tableName: "product_cart",
-    timestamps: false
+    tableName: "users",
+    timestamps: true
 })
-
 export default class UserModel extends Model <UserModel> {
     @PrimaryKey
     @AutoIncrement

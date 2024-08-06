@@ -11,4 +11,15 @@ export default class ProductRepository {
         return await ProductModel.update(product, {where: {id}} )
     }
 
+    async delete(id: number){
+        return await ProductModel.destroy({where: {id}})
+    }
+
+    async findAll(){
+        return await ProductModel.findAll()
+    }
+
+    async findByPk(id: number){
+        return await ProductModel.findByPk(id)
+    }
 }

@@ -11,8 +11,8 @@ import UserModel from "./userModel";
 import ProductCartModel from "./productCartModel";
 
 @Table({
-    tableName: "products",
-    timestamps: false
+    tableName: "order",
+    timestamps: true
 })
 
 export default class OrderModel extends Model<OrderModel> {
@@ -42,7 +42,7 @@ export default class OrderModel extends Model<OrderModel> {
         type: DataType.DECIMAL,
         allowNull: false
     })
-    totalPrice!: number;
+    total!: number;
 
     @BelongsTo(()=> ProductCartModel)
     productCart!: ProductCartModel;

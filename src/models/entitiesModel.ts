@@ -7,8 +7,8 @@ import { Table,
 } from "sequelize-typescript";
 
 @Table({
-    tableName: "products",
-    timestamps: false
+    tableName: "entities",
+    timestamps: true
 })
 
 export default class EntitiesModel extends Model<EntitiesModel> {

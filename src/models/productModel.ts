@@ -10,7 +10,7 @@ import ProductCartModel from "./productCartModel";
 
 @Table({
     tableName: "products",
-    timestamps: false
+    timestamps: true
 })
 
 export default class ProductModel extends Model <ProductModel> {
@@ -18,7 +18,6 @@ export default class ProductModel extends Model <ProductModel> {
     @AutoIncrement
     @Column({
         type: DataType.INTEGER,
-        primaryKey: true
     })
     id!: number;
 

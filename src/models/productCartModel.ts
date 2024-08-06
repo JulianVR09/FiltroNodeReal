@@ -14,8 +14,8 @@ import OrderModel from "./orderModel";
 
 
 @Table({
-    tableName: "products",
-    timestamps: false
+    tableName: "products-cart",
+    timestamps: true
 })
 
 export default class ProductCartModel extends Model <ProductCartModel> {

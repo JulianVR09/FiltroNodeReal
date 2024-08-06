@@ -12,8 +12,8 @@ import UserModel from "./userModel";
 import ProductCartModel from "./productCartModel";
 
 @Table({
-    tableName: "products",
-    timestamps: false
+    tableName: "cart",
+    timestamps: true
 })
 
 export default class CartModel extends Model <CartModel>{

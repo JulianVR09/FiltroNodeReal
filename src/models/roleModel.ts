@@ -9,8 +9,8 @@ import { Table,
 import UserModel from "./userModel";
 
 @Table({
-    tableName: "products",
-    timestamps: false
+    tableName: "role",
+    timestamps: true
 })
 
 export default class RoleModel extends Model <RoleModel> {
